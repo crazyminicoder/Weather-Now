@@ -1,38 +1,246 @@
+.body{
+  margin: 0px;
+}
 .App {
   text-align: center;
+  background-color: black;
+  width: 100%;
+  height: 100vh;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header{
+  width: 100%;
+  height: 8%;
+  background-color: #0c1821;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+}
+.main_body{
+  width: 65%;
+  height: 92%;
+  margin-left: 450px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.search_bar{
+  width: 40%;
+  height: 40px;
+  margin-top: 35px;
+  margin-left: 100px;
+  display: flex;
+    align-items: center;
+    background-color: #A0A0A0;
+    padding: 10px;
+    border-radius: 999px;
+}
+.search_bar input{
+  width: 100%;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  outline-width: 0;
+  color: white;
+  font-size: larger;
+  font-weight: 500;
+}
+::placeholder{
+  color: white;
+  padding-left: 15px;
+}
+
+.units{
+  width: 20%;
+  height: 40px;
+  margin-left: 25px;
+  margin-top: 35px;
+  display: flex;
+    align-items: center;
+    background-color: #A0A0A0;
+    padding: 10px;
+    border-radius: 999px;
+    outline-width: 0;
+}
+.units select{
+  outline-width: 0;
+}
+.temp{
+  width: 40%;
+  height: 40%;
+  margin-left: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.temp_info{
+  width: 30%;
+  height: 40%;
+  display: inline-block;
+  padding-top: 25px;
+  padding-left: 20px;
+}
+.other_info{
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -125px;
+  margin-top: 100px;
+}
+
+.header_left{
+  left: 0;
+  width: 25%;
+  height: 100%;
+  padding-top: 17px;
+}
+.header_right{
+  right: 0px;
+  width: 5%;
+  margin-left: 1300px;
+  color: white;
+  cursor: pointer;
+}
+.header_right a{
+  color: white;
+  border: none;
+  text-decoration: none;
+}
+.header_right a:hover{
+  color: #00a8e8;
+}
+
+.temp h1{
+  color: #ffd60a;
+  font-size: 120px;
+  cursor: pointer;
+  margin: 0;
+  padding-top: 50px;
+}
+.temp_info h3{
+  color: white;
+  margin-top: 10px ;
+  margin-bottom: 0;
+  margin-left: -70px;
+}
+.temp_info h2{
+  margin: 0;
+  color: white;
+  margin-left: -70px;
+}
+.temp_info img{
+  margin-top: 20px;
+  margin-left: -70px;
+}
+#one{
+  margin-top: 0;
+  color: #00a8e8;
+}
+.temp_left{
+  width: 100%;
+  height: 100%;
+}
+
+
+.temp_right_bottom h3{
+  font-size: 100px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.temp_min{  
+  width: 25%;
+  height: 100px;
+  left: 0%;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pressure{
+  width: 25%;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+}
+.wind_speed{
+  width: 25%;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+}
+.temp_max{
+  width: 25%;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+}
+.humidity{
+  width: 25%;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+}
+.clouds{
+  width: 25%;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+}
+.rain_time{
+  width: 25%;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+}
+.volume{
+  width: 25%;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+}
+.units select{
+  width: 100%;
+  border-radius: 999px;
+  height: 100%;
+  border: none;
+  background-color:#A0A0A0;
+}
+.units select{
+  color: white;
+  text-align: center;
+  padding-left: 15px;
+ font-size: larger;
+ font-weight: bold;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+select option{
+  font-size: larger;
+  font-weight:500;
+}
+.tm_left{
+  width: 20%;
+}
+.tm_middle{
+  width: 35%;
+  color: white;
+  padding-left: 10px;
+}
+.tm_right{
+  width: 35%;
+  padding-top: 15px;
+  color: #ffd60a;
+  font-size:x-large;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.temp_info h3{
+  margin-top: 15px;
+}
+#one{
+  margin-top: 15px;
+}
+#two{
+  margin-top: 25px;
 }
